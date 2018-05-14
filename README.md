@@ -1,5 +1,5 @@
 # Data Protection By Design | DPBD Framework
-##### Enabling "In Code" Attribute Declaration To Ensure Data Protection Compliance
+#### Enabling "In Code" Attribute Declaration To Ensure Data Protection Compliance
 
 GDPR, China Cyber Security law etc. are ensuring companies have to take better care of customer data. The purpose of for example the GDPR is to provide a set of standardized data protection laws across all the member countries. This should make it easier for EU citizens to understand how their data is being used, and also raise any complaints, even if they are not in the country where its located.
 
@@ -30,15 +30,15 @@ public class Customer
 The attribute knows there is a class that contains customer data. By adding the attribute on each of the possible sensitive properties the software can identify exactly which properties need to be validated so compliance is ensured. Due to the fact that there is a country used within the class, the tool now knows that customers from multiple countries might be added.
 
 Roadmap:
-V0.1 Proof Of Concept
-Developing basic attribute model
-V0.2. Getting Insights
-Creating the dashboard/report
-V0.3.  Basic Compliance check
-Connecting legislation to the elements
-V0.4. Content Validation
-Adding a testing solution that can traverse through the software to determine how the data is stored. For example. If Microsoft EF in combination with a SQL database is used it knows that data storage is involved. If API endpoints are involved it knows 3th party can acces the software etc.
-V0.5. The Right To Retrieve
-Adding Basics to Enable Data Retrieval by Default
-V0.6. The Right To Be Forgotten
-Adding Basics to Enable Deletes by Request or Data Storage Policies
+1. V0.1. Proof Of Concept
+     - Developing basic attribute model
+2. V0.2. Getting Insights
+     - Creating the dashboard/report
+3. V0.3. Basic Compliance check
+     - Connecting legislation to the elements
+4. V0.4. Content Validation
+     - Adding a testing solution that can traverse through the software to determine how the data is stored. For example. If Microsoft EF in combination with a SQL database is used it knows that data storage is involved. If API endpoints are involved it knows 3th party can acces the software etc.
+5. V0.5. The Right To Retrieve
+     - Adding Basics to Enable Data Retrieval by Default
+6. V0.6. The Right To Be Forgotten
+     - Adding Basics to Enable Deletes by Request or Data Storage Policies
