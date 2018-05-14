@@ -1,14 +1,13 @@
 # Data Protection By Design | DPBD Framework
 ##### Enabling "In Code" Attribute Declaration To Ensure Data Protection Compliance
 
-
 GDPR, China Cyber Security law etc. are ensuring companies have to take better care of customer data. The purpose of for example the GDPR is to provide a set of standardized data protection laws across all the member countries. This should make it easier for EU citizens to understand how their data is being used, and also raise any complaints, even if they are not in the country where its located.
+
 It can be a real challenge to identify within the code where and which entities should be taken care of and in which way. Different regions, countries and even states have their own legislation. Even authorities a can have a different request. For example, the tax office in the EU wants you to store data for a much longer time then GDPR is requesting.  The last thing you want is to manage this complexity in your code with a long written CASE statement that you need to change an maintain every month.
+
 The idea is to be able to easily extend your C# or VB .NET coding with a special attribute that enables easy identification of entities within your code that store sensitive customer data. See it as a reusable attribute that like Swagger can create a dashboard or report based on market entities within your project to target concerning entities and ensure compliance by design. After identification for each of the elements, you can connect the related policies or even let the software determine which policies should be in place
 
-
 For example:
-
 
 ```
 [DPBD]
