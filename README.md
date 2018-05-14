@@ -10,7 +10,7 @@ The idea is to be able to easily extend your C# or VB .NET coding with a special
 For example:
 
 ```
-[DPBD]
+[DPValidation]
 public class Customer
     {
         public int CustomerId { get; set; }
@@ -21,9 +21,9 @@ public class Customer
         [Required]
         public string IdCardNumber{ get; set; }
         [Required]
-[DPBD (dataItemMapping=”IdentificationNumber”, EnableStoragePolicy=True, EnableEncryptionPolicy=True)]
-       Public string country {get; set;}
-[DPBD (dataItemMapping=”countryRegion”)]
+[DPValidation (dataItemMapping=”IdentificationNumber”, EnableStoragePolicy=True, EnableEncryptionPolicy=True)]
+       public string Country {get; set;}
+[DPValidation (dataItemMapping=”countryRegion”)]
     }
 ```
 

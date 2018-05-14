@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace DPBD
+namespace DPBD.Attributes
 {
-    public class DPBDAttribute: Attribute
+    public class DPValidation: Attribute
     {
         public string SomeProperty { get; set; }
     }
