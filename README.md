@@ -1,5 +1,5 @@
 # Data Protection By Design | DPBD Framework
-Enabling "In Code" Attribute Declaration To Ensure Data Protection Compliance
+##### Enabling "In Code" Attribute Declaration To Ensure Data Protection Compliance
 
 
 GDPR, China Cyber Security law etc. are ensuring companies have to take better care of customer data. The purpose of for example the GDPR is to provide a set of standardized data protection laws across all the member countries. This should make it easier for EU citizens to understand how their data is being used, and also raise any complaints, even if they are not in the country where its located.
@@ -9,6 +9,8 @@ The idea is to be able to easily extend your C# or VB .NET coding with a special
 
 For example:
 
+
+```
 [DPBD]
 public class Customer
     {
@@ -24,6 +26,7 @@ public class Customer
        Public string country {get; set;}
 [DPBD (dataItemMapping=”countryRegion”)]
     }
+```
 
 The attribute knows there is a class that contains customer data. By adding the attribute on each of the possible sensitive properties the software can identify exactly which properties need to be validated so compliance is ensured. Due to the fact that there is a country used within the class, the tool now knows that customers from multiple countries might be added.
 
